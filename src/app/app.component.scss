@@ -1,0 +1,47 @@
+.toast {
+    position: fixed;
+
+    bottom: 20px;
+
+    left:50%;
+    transform: translateX(-50%);
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    padding: 7.5px 10px;
+
+    font-size: 20px;
+    font-weight: bolder;
+
+    cursor: pointer;
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    i {
+        padding: 0 10px 0 0;
+    }
+
+    &.error {
+        background-color: #f2dede;
+        color: #a94442;
+    }
+
+    &.warning {
+        background-color: #fcf8e3;
+        color: #8a6d3b;
+    }
+
+    &.info {
+        background-color: #d9edf7;
+        color: #31708f;
+    }
+
+    &.success {
+        background-color: #dff0d8;
+        color: #3c763d;
+    }
+}
