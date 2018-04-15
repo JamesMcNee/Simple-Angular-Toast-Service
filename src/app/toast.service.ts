@@ -13,7 +13,7 @@ export class ToastService {
     }
 
     public getToaster(): Observable<Toast> {
-        return this._toast;
+        return this._toast.asObservable();
     }
 
     public makeToast(toast: Toast) {
